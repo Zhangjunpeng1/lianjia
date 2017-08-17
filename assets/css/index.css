@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: blue;
+}
+
+ul {
+  list-style: none;
+}
+
+.top1 {
+  height: 50px;
+  line-height: 50px;
+  background-color: pink;
+}
+
+.top1 .top1-left {
+  float: left;
+}
+
+.top1 .top1-right {
+  float: right;
+}
+
+.top1 .top1-right li {
+  float: left;
+}
+
+/*# sourceMappingURL=index.css.map */
