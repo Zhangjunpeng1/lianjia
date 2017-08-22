@@ -3,33 +3,675 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>北京链家网</title>
+    <meta name="description" content="链家真房源,北京链家网提供北京地区二手房买卖、新房交易、房屋出租租赁等业务.链家网北京站具有二手房、小区及购房问答和百科等频道,同时可在线查询二手房真实成交价格.买房卖房上链家,让房产交易不再难." />
+    <meta name="keywords" content="二手房,二手房网,链家,北京二手房网,北京房地产,北京房地产,北京租房,北京房产信息" />
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/js/index.js">
+    <link rel="icon" href="assets/img/1.jpg">
+    <script src="jquery.min.js"></script>
 </head>
 
 <body>
     <div class="header">
-        <img src="assets/img/大图2.jpg" alt="">
-        <div class="wrapper">
-            <div class="wrapper-left">
-                <img src="assets/img/2017-08-17_203623.png" width="137" height="66" alt="">
-                <span class="beijing">北京</span>
+        <img src=" assets/img/2.jpg " width="100%" height="640" alt=" ">
+        <div class="wrapper ">
+            <div class="clear">
+                <div class="clear-left ">
+                    <div class="logo" title="链家网"></div>
+                    <span class="beijing "><i></i>北京</span>
+                </div>
+                <div class="logonReg">
+                    <i></i>
+                    <div class="logon"><a href="">登录</a></div>
+                    <div class="reg"><a href="">立即注册</a></div>
+                </div>
+                <ul class="clear-right-nav ">
+                    <li><a href="">二手房</a></li>
+                    <li><a href="">新房</a></li>
+                    <li><a href="">租房</a></li>
+                    <li><img src="assets/images/lvju.png" width="19" height="22" alt=""><a href="">旅居</a></li>
+                    <li><a href="">海外</a></li>
+                    <li><a href="">小区</a</li>
+                    <li><a href="">经纪人</a></li>
+                    <li class="guide">
+                        <a href="">指南</a>
+                        <ul class="guide-list">
+                            <li>问答</li>
+                            <li>百科</li>
+                        </ul>
+                    </li>
+                    <li><a href="">工具</a></li>
+                    <li class="suffer">
+                        <a href="">经验</a>
+                        <ul class="suffer-list">
+                            <li>购房经验</li>
+                            <li>我要投稿</li>
+                        </ul>
+                    </li>
+                    <li><i></i><a href="">业主</a></li>
+                </ul>
             </div>
-            <ul class="wrapper-right-nav">
-                <li>二手房</li>
-                <li>新房</li>
-                <li>租房</li>
-                <li>旅居</li>
-                <li>海外</li>
-                <li>小区</li>
-                <li>经纪人</li>
-                <li>指南</li>
-                <li>工具</li>
-                <li>经验</li>
-                <li>业主</li>
+            <div class="header-wrap">
+                <div class="wrap-ico"><img src="assets/images/2x.png" width="540" height="69" alt=""></div>
+                <div class="house" style="overflow:hidden;height:35px;width:1150px;">
+                    <ul>
+                        <li style="height:35px;">北京链家真实租房 17710 套</li>
+                        <li style="height:35px;">北京链家在售新房楼盘 299个</li>
+                        <li style="height:35px;">北京链家真实在售二手房 24184 套</li>
+                    </ul>
+                </div>
+                <div class="search-box-wrap">
+                    <ul class="menu">
+                        <li class="active" data-index="0">找二手房</li>
+                        <li data-index="1">找新房</li>
+                        <li data-index="2">找租房</li>
+                        <li data-index="3">找小区</li>
+                        <li data-index="4">搜问答</li>
+                    </ul>
+                    <div class="show">
+                        <div>
+                            <h3>试试输入地铁线/站在地铁附近找房，如13号线</h3>
+                        </div>
+                        <div class="hide">
+                            <h3>请输入楼盘名称开始找房</h3>
+                        </div>
+                        <div class="hide">
+                            <h3>请输入区域、商圈或小区名开始找房</h3>
+                        </div>
+                        <div class="hide">
+                            <h3>请输入小区名开始查找小区</h3>
+                        </div>
+                        <div class="hide">
+                            <h3>房产知识有疑问？来搜搜吧~</h3>
+                        </div>
+                        <div class="btn">
+                            开始找房
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-video">
+            <p><img src="assets/images/P1.png" width="16" height="16" alt="">关于仿冒我公司进行不正当竞争行为的郑重声明</p>
+            <p><img src="assets/images/P2.png" width="16" height="16" alt="">房地产中介诚信服务承诺及保证书</p>
+        </div>
+    </div>
+    <div class="home">
+        <ul class="home-nav">
+            <li><a href=""><img src="assets/images/11.png" alt="">
+            <b>找二手房</b>
+            <p>真实二手房源。链家承诺真实在售所见即真</p>
+            </a></li>
+            <li><a href=""><img src="assets/images/12.png" alt="">
+            <b>找新房子</b>
+            <p>全新房屋，全新生活，给您满意的优质新盘</p>
+            </a></li>
+            <li><a href=""><img src="assets/images/13.png" alt="">
+            <b>地图找房</b>
+            <p>为您精准定位，位置周边配套设施一览无余</p>
+            </a></li>
+            <li><a href=""><img src="assets/images/14.png" alt="">
+            <b>房屋估价</b>
+            <p>基于海量成交数据，帮您合理定价预估市值</p>
+            </a></li>
+        </ul>
+    </div>
+    <div class="hand-lianjia">
+        <div class="fl">
+            <div class="titles"></div>
+            <p>集二手、新房、租房功能于一体，随时随地任性找房。IM匿名咨询让您放心，消息动态推送让您省心，服务承诺让您安心，数据百科锦囊让您感受贴心漫漫找房路，我们努力为您想更多。</p>
+            <div class="clears">
+                <div class="clears-fl"></div>
+                <div class="clears-fr"><img src="assets/images/er.png" width="102" height="102" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="new-house">
+        <div class="new-top">
+            <div class="fl">
+                <div class="name"></div>
+                <p>真实信息准确同步，楼盘动态一手掌握</p>
+            </div>
+            <ul class="new-list">
+                <li><a href=""><img src="assets/img/21.jpg" width="350" height="260"alt="">
+                <div class="titles">
+                    
+                                    亦庄金茂府
+                                    
+                <span>
+                    <label>68000</label>
+                    元/平
+                </span></div></a></li>
+                <li><a href=""><img src="assets/img/22.jpg"width="350" height="260" alt=""><div class="titles">
+                    
+                                    首开龙湖天琅
+                                    
+                <span>
+                    <label>1400</label>
+                    万/套
+                </span></div></a></li>
+                <li><a href=""><img src="assets/img/23.jpg"width="350" height="260" alt=""><div class="titles">
+                    
+                                    中骏西山天璟
+                                    
+                <span>
+                    <label>67000</label>
+                    元/平
+                </span>
+                </div></a></li>
             </ul>
         </div>
     </div>
+    <div class="ershoufang">
+        <div class="er-top">
+            <div class="fl">
+                <div class="name"></div>
+                <p>好房源那么多，我们为你精选，链家网会越来越懂你</p>
+            </div>
+            <ul class="er-list">
+                <li><a href=""><img src="assets/images/31.jpg" width="250" height="192"alt=""><span class="span1">375万</span>
+                <div class="bottom">
+                    <p class="p1">流星花园三区 精装修东北朝</p>
+                    <p class="p2">
+                        <span>流星花园三区</span>
+                        <span>2室1厅</span>
+                        <span>60.84平米</span>
+                    </p>
+                </div>
+                <p class="pp">
+                    <span>链家网推荐在售房源</span>
+                </p>
+                </a>
+                </li>
+                <li><a href=""><img src="assets/images/32.jpg" width="250" height="192"alt=""><span class="span1">323万</span>
+                <div class="bottom">
+                    <p class="p1">首付135万  一改两居电</p>
+                    <p class="p2">
+                        <span>流星花园三区</span>
+                        <span>2室3厅</span>
+                        <span>40.84平米</span>
+                    </p>
+                </div>
+                <p class="pp">
+                    <span>链家网推荐在售房源</span>
+                </p>
+                </a></li>
+                <li><a href=""><img src="assets/images/33.jpg" width="250" height="192"alt=""><span class="span1">675万</span>
+                <div class="bottom">
+                    <p class="p1">【万科物业】【全南两居】【</p>
+                    <p class="p2">
+                        <span>建设部大院</span>
+                        <span>2室1厅</span>
+                        <span>64.14平米</span>
+                    </p>
+                </div>
+                <p class="pp">
+                    <span>链家网推荐在售房源</span>
+                </p>
+                </a></li>
+                <li><a href=""><img src="assets/images/34.jpg" width="250" height="192"alt=""><span class="span1">575万</span>
+                <div class="bottom">
+                    <p class="p1">南北通透，全明格局，产权清</p>
+                    <p class="p2">
+                        <span>北苑家园望春园</span>
+                        <span>2室2厅</span>
+                        <span>90.84平米</span>
+                    </p>
+                </div>
+                <p class="pp">
+                    <span>链家网推荐在售房源</span>
+                </p>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="s-truth">
+        <div class="juzhong">
+            <div class="fl">
+            </div>
+            <div class="fr">
+                <p>真实存在，真实在售，真实价格，真实图片！
+                    <br>链家郑重向用户承诺：真实房源，假一赔百元！</p>
+                <div class="tex">
+                    <input type="text" class="inp" placeholder="请输入链家编号查询真伪">
+                    <span class="sousuo"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="floor">
+        <div class="footer">
+            <ul class="lists-1">
+                <li><a href="">了解链家</a></li>
+                <li><a href="">关于链家</a></li>
+                <li><a href="">联系链家</a></li>
+                <li><a href="">加入链家</a></li>
+                <li><a href="">隐私声明</a></li>
+                <li><a href="">网站地图</a></li>
+                <li><a href="">友情链接</a></li>
+                <li><a href="">经纪人登录</a></li>
+            </ul>
+            <div id="lists-2">
+                <div id="menu-t">
+                    <div class="menu-t_intro">城市二手房</div>
+                    <div class="menu-t_intro">商圈二手房</div>
+                    <div class="menu-t_intro">商圈租房</div>
+                    <div class="menu-t_intro">商圈小区div</div>
+                    <div class="menu-t_intro">二热门小区</div>
+                    <div class="menu-t_intro">小区二手房</div>
+                    <div class="menu-t_intro">小区租房</div>
+                    <div class="menu-t_intro">小区租房</div>
+                    <div class="menu-t_intro">新房</div>
+                    <div class="menu-t_intro">百科</div>
+                    <div class="menu-t_intro">租房</div>
+                    <div class="menu-t_intro">小区</div>
+                    <div class="menu-t_intro">问答</div>
+                    <div class="menu-t_intro">房产专题</div>
+                    <div class="menu-t_intro">合作与友情链接</div>
+                </div>
+                <div id="shows">
+                    <div class="hides" id="actives">
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">合肥二手房</a>
+                    </div>
+                    <div class="hides">
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">合肥二手房</a>
+                    </div>
+                    <div class="hides">
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">合肥二手房</a>
+                    </div>
+                    <div class="hides">
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">合肥二手房</a> 4
+                    </div>
+                    <div class="hides">
+                        <a href=" ">北京二手房</a>
+                        <a href=" ">广州二手房</a>
+                        <a href=" ">深圳二手房</a>
+                        <a href=" ">天津二手房</a>
+                        <a href=" ">成都二手房</a>
+                        <a href=" ">南京二手房</a>
+                        <a href=" ">杭州二手房</a>
+                        <a href=" ">青岛二手房</a>
+                        <a href=" ">大连二手房</a>
+                        <a href=" ">北京二手房</a>
+                        <a href=" ">广州二手房</a>
+                        <a href=" ">深圳二手房</a>
+                        <a href=" ">天津二手房</a>
+                        <a href=" ">成都二手房</a>
+                        <a href=" ">南京二手房</a>
+                        <a href=" ">杭州二手房</a>
+                        <a href=" ">青岛二手房</a>
+                        <a href=" ">大连二手房</a>
+                        <a href=" ">厦门二手房</a>
+                        <a href=" ">武汉二手房</a>
+                        <a href=" ">重庆二手房</a>
+                        <a href=" ">长沙二手房</a>
+                        <a href=" ">济南二手房</a>
+                        <a href=" ">佛山二手房</a>
+                        <a href=" ">东莞二手房</a>
+                        <a href=" ">烟台二手房</a>
+                        <a href=" ">中山二手房</a>
+                        <a href=" ">珠海二手房</a>
+                        <a href=" ">惠州二手房</a><a href=" ">沈阳二手房</a>
+                        <a href=" ">合肥二手房</a> 5
+                    </div>
+                    <div class="hides ">
+                        <a href=" ">北京二手房</a>
+                        <a href=" ">广州二手房</a>
+                        <a href=" ">深圳二手房</a>
+                        <a href=" ">天津二手房</a>
+                        <a href=" ">成都二手房</a>
+                        <a href=" ">南京二手房</a>
+                        <a href=" ">杭州二手房</a>
+                        <a href=" ">青岛二手房</a>
+                        <a href=" ">大连二手房</a>
+                        <a href=" ">厦门二手房</a>
+                        <a href=" ">武汉二手房</a>
+                        <a href=" ">重庆二手房</a>
+                        <a href=" ">长沙二手房</a>
+                        <a href=" ">济南二手房</a>
+                        <a href=" ">佛山二手房</a>
+                        <a href=" ">东莞二手房</a>
+                        <a href=" ">烟台二手房</a>
+                        <a href=" ">中山二手房</a>
+                        <a href=" ">珠海二手房</a>
+                        <a href=" ">惠州二手房</a><a href=" ">沈阳二手房</a>
+                        <a href=" ">合肥二手房</a> 6
+                    </div>
+                    <div class="hides ">
+                        <a href=" ">北京二手房</a>
+                        <a href=" ">广州二手房</a>
+                        <a href=" ">深圳二手房</a>
+                        <a href=" ">天津二手房</a>
+                        <a href=" ">成都二手房</a>
+                        <a href=" ">南京二手房</a>
+                        <a href=" ">杭州二手房</a>
+                        <a href=" ">青岛二手房</a>
+                        <a href=" ">大连二手房</a>
+                        <a href=" ">厦门二手房</a>
+                        <a href=" ">武汉二手房</a>
+                        <a href=" ">重庆二手房</a>
+                        <a href=" ">长沙二手房</a>
+                        <a href=" ">济南二手房</a>
+                        <a href=" ">佛山二手房</a>
+                        <a href=" ">东莞二手房</a>
+                        <a href=" ">烟台二手房</a>
+                        <a href=" ">中山二手房</a>
+                        <a href=" ">珠海二手房</a>
+                        <a href=" ">惠州二手房</a><a href=" ">沈阳二手房</a>
+                        <a href=" ">合肥二手房</a> 7
+                    </div>
+                    <div class="hides ">
+                        <a href=" ">北京二手房</a>
+                        <a href=" ">广州二手房</a>
+                        <a href=" ">深圳二手房</a>
+                        <a href=" ">天津二手房</a>
+                        <a href=" ">成都二手房</a>
+                        <a href=" ">南京二手房</a>
+                        <a href=" ">杭州二手房</a>
+                        <a href=" ">青岛二手房</a>
+                        <a href=" ">大连二手房</a>
+                        <a href=" ">厦门二手房</a>
+                        <a href=" ">武汉二手房</a>
+                        <a href=" ">重庆二手房</a>
+                        <a href=" ">长沙二手房</a>
+                        <a href=" ">济南二手房</a>
+                        <a href=" ">佛山二手房</a>
+                        <a href=" ">东莞二手房</a>
+                        <a href=" ">烟台二手房</a>
+                        <a href=" ">中山二手房</a>
+                        <a href=" ">珠海二手房</a>
+                        <a href=" ">惠州二手房</a><a href=" ">沈阳二手房</a>
+                        <a href=" ">合肥二手房</a> 8
+                    </div>
+                    <div class="hides ">
+                        <a href=" ">北京二手房</a>
+                        <a href=" ">广州二手房</a>
+                        <a href=" ">深圳二手房</a>
+                        <a href=" ">天津二手房</a>
+                        <a href=" ">成都二手房</a>
+                        <a href=" ">南京二手房</a>
+                        <a href=" ">杭州二手房</a>
+                        <a href=" ">青岛二手房</a>
+                        <a href=" ">大连二手房</a>
+                        <a href=" ">厦门二手房</a>
+                        <a href=" ">武汉二手房</a>
+                        <a href=" ">重庆二手房</a>
+                        <a href=" ">长沙二手房</a>
+                        <a href=" ">济南二手房</a>
+                        <a href=" ">佛山二手房</a>
+                        <a href=" ">东莞二手房</a>
+                        <a href=" ">烟台二手房</a>
+                        <a href=" ">中山二手房</a>
+                        <a href=" ">珠海二手房</a>
+                        <a href=" ">惠州二手房</a><a href=" ">沈阳二手房</a>
+                        <a href=" ">合肥二手房</a> 9
+                    </div>
+                    <div class="hides ">
+                        <a href=" ">北京二手房</a>
+                        <a href=" ">广州二手房</a>
+                        <a href=" ">深圳二手房</a>
+                        <a href=" ">天津二手房</a>
+                        <a href=" ">成都二手房</a>
+                        <a href=" ">南京二手房</a>
+                        <a href=" ">杭州二手房</a>
+                        <a href=" ">青岛二手房</a>
+                        <a href=" ">大连二手房</a>
+                        <a href=" ">厦门二手房</a>
+                        <a href=" ">武汉二手房</a>
+                        <a href=" ">重庆二手房</a>
+                        <a href=" ">长沙二手房</a>
+                        <a href=" ">济南二手房</a>
+                        <a href=" ">佛山二手房</a>
+                        <a href=" ">东莞二手房</a>
+                        <a href=" ">烟台二手房</a>
+                        <a href=" ">中山二手房</a>
+                        <a href=" ">珠海二手房</a>
+                        <a href=" ">惠州二手房</a><a href=" ">沈阳二手房</a>
+                        <a href=" ">合肥二手房</a> 10
+                    </div>
+                    <div class="hides ">
+                        <a href=" ">北京二手房</a>
+                        <a href=" ">广州二手房</a>
+                        <a href=" ">深圳二手房</a>
+                        <a href=" ">天津二手房</a>
+                        <a href=" ">成都二手房</a>
+                        <a href=" ">南京二手房</a>
+                        <a href=" ">杭州二手房</a>
+                        <a href=" ">青岛二手房</a>
+                        <a href=" ">大连二手房</a>
+                        <a href=" ">厦门二手房</a>
+                        <a href=" ">武汉二手房</a>
+                        <a href=" ">重庆二手房</a>
+                        <a href=" ">长沙二手房</a>
+                        <a href=" ">济南二手房</a>
+                        <a href=" ">佛山二手房</a>
+                        <a href=" ">东莞二手房</a>
+                        <a href=" ">烟台二手房</a>
+                        <a href=" ">中山二手房</a>
+                        <a href=" ">珠海二手房</a>
+                        <a href=" ">惠州二手房</a><a href=" ">沈阳二手房</a>
+                        <a href=" ">合肥二手房</a> 11
+                    </div>
+                    <div class="hides ">
+                        <a href=" ">北京二手房</a>
+                        <a href=" ">广州二手房</a>
+                        <a href=" ">深圳二手房</a>
+                        <a href=" ">天津二手房</a>
+                        <a href=" ">成都二手房</a>
+                        <a href=" ">南京二手房</a>
+                        <a href=" ">杭州二手房</a>
+                        <a href=" ">青岛二手房</a>
+                        <a href=" ">大连二手房</a>
+                        <a href=" ">厦门二手房</a>
+                        <a href=" ">武汉二手房</a>
+                        <a href=" ">重庆二手房</a>
+                        <a href=" ">长沙二手房</a>
+                        <a href=" ">济南二手房</a>
+                        <a href=" ">佛山二手房</a>
+                        <a href=" ">东莞二手房</a>
+                        <a href=" ">烟台二手房</a>
+                        <a href=" ">中山二手房</a>
+                        <a href=" ">珠海二手房</a>
+                        <a href=" ">惠州二手房</a><a href=" ">沈阳二手房</a>
+                        <a href=" ">合肥二手房</a> 12
+                    </div>
+                    <div class="hides ">
+                        <a href=" ">北京二手房</a>
+                        <a href=" ">广州二手房</a>
+                        <a href=" ">深圳二手房</a>
+                        <a href=" ">天津二手房</a>
+                        <a href=" ">成都二手房</a>
+                        <a href=" ">南京二手房</a>
+                        <a href=" ">杭州二手房</a>
+                        <a href=" ">青岛二手房</a>
+                        <a href=" ">大连二手房</a>
+                        <a href=" ">厦门二手房</a>
+                        <a href=" ">武汉二手房</a>
+                        <a href=" ">重庆二手房</a>
+                        <a href=" ">长沙二手房</a>
+                        <a href=" ">济南二手房</a>
+                        <a href=" ">佛山二手房</a>
+                        <a href=" ">东莞二手房</a>
+                        <a href=" ">烟台二手房</a>
+                        <a href=" ">中山二手房</a>
+                        <a href=" ">珠海二手房</a>
+                        <a href=" ">惠州二手房</a><a href=" ">沈阳二手房</a>
+                        <a href=" ">合肥二手房</a> 13
+                    </div>
+                    <div class="hides ">
+                        <a href=" ">北京二手房</a>
+                        <a href=" ">广州二手房</a>
+                        <a href=" ">深圳二手房</a>
+                        <a href=" ">天津二手房</a>
+                        <a href=" ">成都二手房</a>
+                        <a href=" ">南京二手房</a>
+                        <a href=" ">杭州二手房</a>
+                        <a href=" ">青岛二手房</a>
+                        <a href=" ">大连二手房</a>
+                        <a href=" ">厦门二手房</a>
+                        <a href=" ">武汉二手房</a>
+                        <a href=" ">重庆二手房</a>
+                        <a href=" ">长沙二手房</a>
+                        <a href=" ">济南二手房</a>
+                        <a href=" ">佛山二手房</a>
+                        <a href=" ">东莞二手房</a>
+                        <a href=" ">烟台二手房</a>
+                        <a href=" ">中山二手房</a>
+                        <a href=" ">珠海二手房</a>
+                        <a href=" ">惠州二手房</a><a href=" ">沈阳二手房</a>
+                        <a href=" ">合肥二手房</a> 14
+                    </div>
+                    <div class="hides ">
+                        <a href=" ">北京二手房</a>
+                        <a href=" ">广州二手房</a>
+                        <a href=" ">深圳二手房</a>
+                        <a href=" ">天津二手房</a>
+                        <a href=" ">成都二手房</a>
+                        <a href=" ">南京二手房</a>
+                        <a href=" ">杭州二手房</a>
+                        <a href=" ">青岛二手房</a>
+                        <a href=" ">大连二手房</a>
+                        <a href=" ">厦门二手房</a>
+                        <a href=" ">武汉二手房</a>
+                        <a href=" ">重庆二手房</a>
+                        <a href=" ">长沙二手房</a>
+                        <a href=" ">济南二手房</a>
+                        <a href=" ">佛山二手房</a>
+                        <a href=" ">东莞二手房</a>
+                        <a href=" ">烟台二手房</a>
+                        <a href=" ">中山二手房</a>
+                        <a href=" ">珠海二手房</a>
+                        <a href=" ">惠州二手房</a><a href=" ">沈阳二手房</a>
+                        <a href=" ">合肥二手房</a> 15
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- youce -->
+    <ul class="youce ">
+        <li class="yc-1 "></li>
+        <li class="yc-2 "></li>
+        <li class="yc-3 "></li>
+        <li class="yc-4 "></li>
+        <li class="yc-5 "></li>
+        <li class="yc-6 "></li>
+        <li class="yc-7 "></li>
+        <li class="yc-8 "></li>
+        <li class="yc-9 "></li>
+        <li class="yc-10 "></li>
+    </ul>
+    <div class="fixation">
+        <div class="fix"><img src="assets/images/iphone.png" width="190" height="183" alt=""></div>
+        <div class="zhongjian">
+            <div class="zj-1">扫描下载链接APP</div>
+            <div class="zj-2">随之随地查看新上房源</div>
+        </div>
+        <div class="code"><img src="assets/images/Qr.png" width="88" height="88" alt=""></div>
+    </div>
+    <script src="assets/js/index.js "></script>
 </body>
 
 </html>
