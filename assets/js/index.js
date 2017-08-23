@@ -97,20 +97,3 @@ for (var i = 0; i < menus.length; i++) {
         this.removeAttribute('id');
     }
 }
-/*贴顶*/
-$(function() {
-    // 获取导航距页面顶部的距离
-    var top = $('.si').offset().top;
-    $(window).scroll(function() {
-        // 当滚动距离超过上面top的时候，固定定位
-        var sTop = $(window).scrollTop();
-        // console.log(sTop,top);
-        if (sTop >= top) {
-            // console.log('你已经超过导航');
-            $('.si').addClass('active')
-        } else {
-            // console.log(123);
-            $('.si').removeClass('active');
-        }
-    })
-})

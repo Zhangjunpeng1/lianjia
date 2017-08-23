@@ -12,12 +12,6 @@ a:-webkit-any-link {
   cursor: auto;
   text-decoration: underline; }
 
-.fl {
-  float: left; }
-
-.fr {
-  float: right; }
-
 div {
   display: block; }
 
