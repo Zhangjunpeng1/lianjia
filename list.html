@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>北京新房</title>
     <link rel="stylesheet" href="assets/css/list.css">
+    <link rel="stylesheet" href="assets/js/list.js">
+    <script src="jquery.min.js"></script>
 </head>
 
 <body>
@@ -57,7 +59,7 @@
                     <i></i> 北京 BEIJING
                 </div>
                 <div class="fl-t2"><a href="">地图找房
-				
+                
                 </a></div>
             </div>
             <div class="fl-d">
@@ -67,19 +69,588 @@
         </div>
         <div class="fl-2">
             <div class="juzhong">
-                <div class="inp">
-                    <input type="text" placeholder="楼盘名/关键字">
-                    <div class="btn"></div>
+                <input type="text" placeholder="楼盘名/关键字">
+                <div class="sou"></div>
+                <div class="tuijian">
+                    <span>推荐搜素:</span>
+                    <a href="">亦庄金茂府</a>
+                    <a href="">首开龙湖天琅</a>
+                    <a href="">中骏西山天璟</a>
+                    <a href="">泰禾昌平拾景园</a>
                 </div>
-                <div class="tuijian"></div>
-                <div class="clear"></div>
+                <div class="clear">
+                    <p class="txt">试试条件找房</p>
+                    <div class="choose">区域</div>
+                    <div class="choose">类型</div>
+                    <div class="choose">房型</div>
+                    <div class="choose">售价</div>
+                </div>
+                <div class="btn">筛选</div>
             </div>
         </div>
         <div class="middle"></div>
     </div>
-    <div class="lun"></div>
-    <div class="all"></div>
-    <div class="footer"></div>
+    <div class="xinfang">
+        <div class="xinfang-juZ">
+            <div class="title">
+                精选楼层
+            </div>
+            <div class="lun">
+                <ul class="lun1">
+                    <li class="lis">
+                        <ul class="list">
+                            <li>
+                                <div class="list-fl">
+                                    <span>效果图</span>
+                                    <img src="assets/img/lun01.jpg" alt="">
+                                </div>
+                                <div class="list-fr">
+                                    <p class="liebiao">
+                                        <a href="" title="亦庄金茂府">亦庄金茂府</a>
+                                        <span class="lab">住宅</span>
+                                    </p>
+                                    <p class="list-name">
+                                        <i></i> 亦庄开发
+                                    </p>
+                                    <p>建面 130~150m²</p>
+                                    <p class="list-price">
+                                        均价
+                                        <span>68000 元/平</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-fl">
+                                    <span>效果图</span>
+                                    <img src="assets/img/lun02.jpg" alt="">
+                                </div>
+                                <div class="list-fr">
+                                    <p class="liebiao">
+                                        <a href="" title="亦庄金茂府">亦庄金茂府</a>
+                                        <span class="lab">住宅</span>
+                                    </p>
+                                    <p class="list-name">
+                                        <i></i> 亦庄开发
+                                    </p>
+                                    <p>建面 130~150m²</p>
+                                    <p class="list-price">
+                                        均价
+                                        <span>68000 元/平</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-fl">
+                                    <span>效果图</span>
+                                    <img src="assets/img/lun03.jpg" alt="">
+                                </div>
+                                <div class="list-fr">
+                                    <p class="liebiao">
+                                        <a href="" title="亦庄金茂府">亦庄金茂府</a>
+                                        <span class="lab">住宅</span>
+                                    </p>
+                                    <p class="list-name">
+                                        <i></i> 亦庄开发
+                                    </p>
+                                    <p>建面 130~150m²</p>
+                                    <p class="list-price">
+                                        均价
+                                        <span>68000 元/平</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-fl">
+                                    <span>效果图</span>
+                                    <img src="assets/img/lun04.jpg" alt="">
+                                </div>
+                                <div class="list-fr">
+                                    <p class="liebiao">
+                                        <a href="" title="亦庄金茂府">亦庄金茂府</a>
+                                        <span class="lab">住宅</span>
+                                    </p>
+                                    <p class="list-name">
+                                        <i></i> 亦庄开发
+                                    </p>
+                                    <p>建面 130~150m²</p>
+                                    <p class="list-price">
+                                        均价
+                                        <span>68000 元/平</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lis">
+                        <ul class="list">
+                            <li>
+                                <div class="list-fl">
+                                    <span>效果图</span>
+                                    <img src="assets/img/lun05.jpg" alt="">
+                                </div>
+                                <div class="list-fr">
+                                    <p class="liebiao">
+                                        <a href="" title="亦庄金茂府">亦庄金茂府</a>
+                                        <span class="lab">住宅</span>
+                                    </p>
+                                    <p class="list-name">
+                                        <i></i> 亦庄开发
+                                    </p>
+                                    <p>建面 130~150m²</p>
+                                    <p class="list-price">
+                                        均价
+                                        <span>68000 元/平</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-fl">
+                                    <span>效果图</span>
+                                    <img src="assets/img/lun06.jpg" alt="">
+                                </div>
+                                <div class="list-fr">
+                                    <p class="liebiao">
+                                        <a href="" title="亦庄金茂府">亦庄金茂府</a>
+                                        <span class="lab">住宅</span>
+                                    </p>
+                                    <p class="list-name">
+                                        <i></i> 亦庄开发
+                                    </p>
+                                    <p>建面 130~150m²</p>
+                                    <p class="list-price">
+                                        均价
+                                        <span>68000 元/平</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-fl">
+                                    <span>效果图</span>
+                                    <img src="assets/img/lun07.jpg" alt="">
+                                </div>
+                                <div class="list-fr">
+                                    <p class="liebiao">
+                                        <a href="" title="亦庄金茂府">亦庄金茂府</a>
+                                        <span class="lab">住宅</span>
+                                    </p>
+                                    <p class="list-name">
+                                        <i></i> 亦庄开发
+                                    </p>
+                                    <p>建面 130~150m²</p>
+                                    <p class="list-price">
+                                        均价
+                                        <span>68000 元/平</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-fl">
+                                    <span>效果图</span>
+                                    <img src="assets/img/lun08.jpg" alt="">
+                                </div>
+                                <div class="list-fr">
+                                    <p class="liebiao">
+                                        <a href="" title="亦庄金茂府">亦庄金茂府</a>
+                                        <span class="lab">住宅</span>
+                                    </p>
+                                    <p class="list-name">
+                                        <i></i> 亦庄开发
+                                    </p>
+                                    <p>建面 130~150m²</p>
+                                    <p class="list-price">
+                                        均价
+                                        <span>68000 元/平</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lis">
+                        <ul class="list">
+                            <li>
+                                <div class="list-fl">
+                                    <span>效果图</span>
+                                    <img src="assets/img/lun09.jpg" alt="">
+                                </div>
+                                <div class="list-fr">
+                                    <p class="liebiao">
+                                        <a href="" title="亦庄金茂府">亦庄金茂府</a>
+                                        <span class="lab">住宅</span>
+                                    </p>
+                                    <p class="list-name">
+                                        <i></i> 亦庄开发
+                                    </p>
+                                    <p>建面 130~150m²</p>
+                                    <p class="list-price">
+                                        均价
+                                        <span>68000 元/平</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-fl">
+                                    <span>效果图</span>
+                                    <img src="assets/img/lun10.jpg" alt="">
+                                </div>
+                                <div class="list-fr">
+                                    <p class="liebiao">
+                                        <a href="" title="亦庄金茂府">亦庄金茂府</a>
+                                        <span class="lab">住宅</span>
+                                    </p>
+                                    <p class="list-name">
+                                        <i></i> 亦庄开发
+                                    </p>
+                                    <p>建面 130~150m²</p>
+                                    <p class="list-price">
+                                        均价
+                                        <span>68000 元/平</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-fl">
+                                    <span>效果图</span>
+                                    <img src="assets/img/lun11.jpg" alt="">
+                                </div>
+                                <div class="list-fr">
+                                    <p class="liebiao">
+                                        <a href="" title="亦庄金茂府">亦庄金茂府</a>
+                                        <span class="lab">住宅</span>
+                                    </p>
+                                    <p class="list-name">
+                                        <i></i> 亦庄开发
+                                    </p>
+                                    <p>建面 130~150m²</p>
+                                    <p class="list-price">
+                                        均价
+                                        <span>68000 元/平</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-fl">
+                                    <span>效果图</span>
+                                    <img src="assets/img/lun12.jpg" alt="">
+                                </div>
+                                <div class="list-fr">
+                                    <p class="liebiao">
+                                        <a href="" title="亦庄金茂府">亦庄金茂府</a>
+                                        <span class="lab">住宅</span>
+                                    </p>
+                                    <p class="list-name">
+                                        <i></i> 亦庄开发
+                                    </p>
+                                    <p>建面 130~150m²</p>
+                                    <p class="list-price">
+                                        均价
+                                        <span>68000 元/平</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ol>
+                    <li class="active" data-index="0"></li>
+                    <li data-index="1"></li>
+                    <li data-index="2"></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+    </div>
+    <div class="all">
+        <div class="all-list">
+            <div class="all-title">推荐楼盘</div>
+            <div class="all-ge">
+                在售楼盘<span>300</span>个
+            </div>
+            <ul class="all-img">
+                <li>
+                    <div class="bg">
+                        <a href="" title="北京风景"><img src="assets/img/all01.jpg" alt="">
+                                <span class="size1">效果图</span>
+                                <span class="size2">北京风景</span>
+                                <span class="size3">
+                                    <i></i>
+                                    【昌平】京藏高速30（昌平城区）出口向东，南环大桥东侧1000米
+                                </span>
+                            </a>
+                        <div class='bottom'>
+                            <div class="fl">
+                                <p>
+                                    均价：<span class="price">49000 元/平</span>
+                                </p>
+                                <p>3居/2居 - 建面 122~150m²</p>
+                            </div>
+                            <div class="fr">住宅</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <a href="" title="北京风景"><img src="assets/img/all02.jpg" alt="">
+                                <span class="size1">效果图</span>
+                                <span class="size2">北京风景</span>
+                                <span class="size3">
+                                    <i></i>
+                                    【昌平】京藏高速30（昌平城区）出口向东，南环大桥东侧1000米
+                                </span>
+                            </a>
+                        <div class='bottom'>
+                            <div class="fl">
+                                <p>
+                                    均价：<span class="price">49000 元/平</span>
+                                </p>
+                                <p>3居/2居 - 建面 122~150m²</p>
+                            </div>
+                            <div class="fr">住宅</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <a href="" title="北京风景"><img src="assets/img/all03.jpg" alt="">
+                                <span class="size1">效果图</span>
+                                <span class="size2">北京风景</span>
+                                <span class="size3">
+                                    <i></i>
+                                    【昌平】京藏高速30（昌平城区）出口向东，南环大桥东侧1000米
+                                </span>
+                            </a>
+                        <div class='bottom'>
+                            <div class="fl">
+                                <p>
+                                    均价：<span class="price">49000 元/平</span>
+                                </p>
+                                <p>3居/2居 - 建面 122~150m²</p>
+                            </div>
+                            <div class="fr">住宅</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <a href="" title="北京风景"><img src="assets/img/all04.jpg" alt="">
+                                <span class="size1">效果图</span>
+                                <span class="size2">北京风景</span>
+                                <span class="size3">
+                                    <i></i>
+                                    【昌平】京藏高速30（昌平城区）出口向东，南环大桥东侧1000米
+                                </span>
+                            </a>
+                        <div class='bottom'>
+                            <div class="fl">
+                                <p>
+                                    均价：<span class="price">49000 元/平</span>
+                                </p>
+                                <p>3居/2居 - 建面 122~150m²</p>
+                            </div>
+                            <div class="fr">住宅</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <a href="" title="北京风景"><img src="assets/img/all05.jpg" alt="">
+                                <span class="size1">效果图</span>
+                                <span class="size2">北京风景</span>
+                                <span class="size3">
+                                    <i></i>
+                                    【昌平】京藏高速30（昌平城区）出口向东，南环大桥东侧1000米
+                                </span>
+                            </a>
+                        <div class='bottom'>
+                            <div class="fl">
+                                <p>
+                                    均价：<span class="price">49000 元/平</span>
+                                </p>
+                                <p>3居/2居 - 建面 122~150m²</p>
+                            </div>
+                            <div class="fr">住宅</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg">
+                        <a href="" title="北京风景"><img src="assets/img/all06.jpg" alt="">
+                                <span class="size1">效果图</span>
+                                <span class="size2">北京风景</span>
+                                <span class="size3">
+                                    <i></i>
+                                    【昌平】京藏高速30（昌平城区）出口向东，南环大桥东侧1000米
+                                </span>
+                            </a>
+                        <div class='bottom'>
+                            <div class="fl">
+                                <p>
+                                    均价：<span class="price">49000 元/平</span>
+                                </p>
+                                <p>3居/2居 - 建面 122~150m²</p>
+                            </div>
+                            <div class="fr">住宅</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="gengduo">查看更多</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footers">
+            <ul class="lists-1">
+                <li><a href="">链家新房合作</a></li>
+                <li><a href="">了解链家网</a></li>
+                <li><a href="">关于链家</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">加入链家</a></li>
+                <li><a href="">隐私声明</a></li>
+                <li><a href="">网站地图</a></li>
+                <li><a href="">友情链接</a></li>
+                <li><a href="">经纪人登录</a></li>
+            </ul>
+            <div class="fr">官方客服 1010 9666</div>
+            <div class="lists-2">
+                <ul class="menu-t">
+                    <li class="active" data-index="0">北京区县新楼盘</li>
+                    <li data-index="1">推荐城市新房网</li>
+                    <li data-index="2">推荐城市新楼盘</li>
+                    <li data-index="3">友情链接</li>
+                </ul>
+                <div class="show">
+                    <div>
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">合肥二手房</a>
+                    </div>
+                    <div class="hides">
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">合肥二手房</a>
+                    </div>
+                    <div class="hides">
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">合肥二手房</a>
+                    </div>
+                    <div class="hides">
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">合肥二手房</a> 4
+                    </div>
+                    <div class="erweima"><img src="assets/images/erweima.png" width="130" height="130" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="copy-fl">链家网（北京）科技有限公司 | 网络经营许可证 京ICP备16057509号-2 | © Copyright©2010-2017 链家网Lianjia.com版权所有<a href=""><img src="assets/images/beian.png" alt="京公网安备"><p>京公网安备 11010802024019号</p></a></div>
+        </div>
+    </div>
+    <ul class="youce ">
+        <li class="yc-1 "></li>
+        <li class="yc-2 "></li>
+        <li class="yc-3 "></li>
+        <li class="yc-4 "></li>
+        <li class="yc-5 "></li>
+        <li class="yc-6 "></li>
+        <li class="yc-7 "></li>
+        <li class="yc-8 "></li>
+        <li class="yc-9 "></li>
+        <li class="yc-10 "></li>
+    </ul>
 </body>
 
 </html>
