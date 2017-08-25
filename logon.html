@@ -4,9 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <title>登录页</title>
+    <link rel="stylesheet" href="assets/css/logon.css">
 </head>
 
 <body>
+    <div class="user-logon">
+        <div class=" logon-head">
+            <div class="head-fl">
+                <img src="assets/images/reg.png" width="151" height="55" alt="">
+            </div>
+            <a href="index.html" class="head-fr">返回链家网首页
+            </a>
+        </div>
+        <div class="reg-body">
+            <h1>登录</h1>
+            <div class="reg-logon">
+                <a href="reg.html">已有账户，请注册</a>
+            </div>
+            <div class="reg-form">
+                <form action="">
+                    <input type="hidden" name="" value="">
+                    <ul>
+                        <li class="phone">
+                            <input type="text" name="zhangsan" placeholder="请输入手机号" validatename="手机号" class=" inputText wenben">
+                            <p class="err-box">
+                                请输入手机号
+                                <i class="triangle"></i>
+                            </p>
+                        </li>
+                        <li class="pass">
+                            <input type="password" name="password" id="password" placeholder="请输入登录密码" validate="notNull,passwordRule" validatename="密码" class="inputText zhaosi" maxlength="20">
+                            <p class="err-boxs">
+                                请输入密码
+                                <i class="triangle"></i>
+                            </p>
+                        </li>
+                        <li class="label-mt10">
+                            <label for="">
+                                <input type="checkbox" class="meimei" validate="isChecked" validatename="协议" checked="checked">
+                                <span>我已阅读并同意</span>
+                                <a href="">《链家用户使用协议》</a>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="submit" value="立即登录" class="inputText xiaoming">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="reg-footer">链家网（北京）科技有限公司 | 网络经营许可证 京ICP备16057509号-2 | © Copyright©2010-2017 链家网Lianjia.com版权所有
+            <div style="width:300px;margin:0 auto;"><a href=""><img src="assets/images/beian.png" style="float:left;"alt=""><p style="float:left;height:20px;line-height:20px;margin:0px 0px 0px 5px;color:#939393;">京公网安备 11010802024019</p></a></div>
+        </div>
+    </div>
 </body>
 
 </html>

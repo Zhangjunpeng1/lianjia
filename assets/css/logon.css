@@ -1,4 +1,10 @@
 @charset "UTF-8";
+html {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -8,23 +14,23 @@ li {
 
 body {
   width: 100%;
-  height: 713px;
   font-size: 14px;
   color: #333;
   background-color: #f5f5f6;
   font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", 'Segoe UI', Tahoma, "宋体b8b\4f53", SimSun, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+  webkit-text-size-adjust: 100%; }
 
 div {
   display: block; }
 
-.user-reg {
+.user-logon {
   width: 100%;
-  height: 574px;
+  height: 500px;
   position: relative; }
-  .user-reg .reg-head {
+  .user-logon .logon-head {
     position: absolute;
     width: 100%;
     height: 55px;
@@ -32,56 +38,56 @@ div {
     position: relative;
     margin-bottom: 40px;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.05); }
-    .user-reg .reg-head .head-fl {
+    .user-logon .logon-head .head-fl {
       position: absolute;
       width: 151px;
       height: 55px; }
-    .user-reg .reg-head .head-fr {
-      right: 20px;
+    .user-logon .logon-head .head-fr {
+      right: 0px;
       position: absolute;
       width: 128px;
       height: 55px;
       text-align: center; }
-      .user-reg .reg-head .head-fr::after {
+      .user-logon .logon-head .head-fr::after {
         content: '';
         display: inline-block;
         width: 20px;
         height: 20px;
         background: url(../images/after.png) 396px -99px; }
-    .user-reg .reg-head a {
+    .user-logon .logon-head a {
       outline: none;
       text-decoration: none;
       color: #333; }
-  .user-reg .reg-body {
+  .user-logon .reg-body {
     width: 1000px;
     margin: 0 auto;
-    height: 480px;
+    height: 232px;
     position: relative; }
-    .user-reg .reg-body h1 {
+    .user-logon .reg-body h1 {
       width: 372px;
       font-size: 35px;
       margin-bottom: 28px;
       margin: 0 auto;
       font-weight: normal; }
-    .user-reg .reg-body .reg-logon {
+    .user-logon .reg-body .reg-logon {
       position: absolute;
       width: 112px;
       height: 20px;
       left: 575px;
       top: 25px; }
-      .user-reg .reg-body .reg-logon a {
+      .user-logon .reg-body .reg-logon a {
         text-decoration: none;
         outline: none;
         color: #39ac6a; }
-      .user-reg .reg-body .reg-logon:hover a {
+      .user-logon .reg-body .reg-logon:hover a {
         text-decoration: underline; }
-    .user-reg .reg-body .reg-form {
+    .user-logon .reg-body .reg-form {
       position: absolute;
       width: 1000px;
       height: 405px;
       margin-top: 20px;
       text-align: center; }
-      .user-reg .reg-body .reg-form .inputText {
+      .user-logon .reg-body .reg-form .inputText {
         text-indent: 19px;
         width: 372px;
         height: 55px;
@@ -89,53 +95,65 @@ div {
         font-size: 14px;
         outline: none;
         border-top: none;
-        border-left: 1px solid #e4e4e4; }
-      .user-reg .reg-body .reg-form .zhangsan {
+        border-left: 1px solid #e4e4e4;
+        position: relative; }
+      .user-logon .reg-body .reg-form .err-box {
+        position: absolute;
+        left: 703px;
+        top: 7px;
+        padding: 10px;
+        border-radius: 3px;
+        background: #fa5741;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 900; }
+      .user-logon .reg-body .reg-form .triangle {
+        position: absolute;
+        left: -9px;
+        bottom: 15px;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border: 5px solid;
+        border-color: transparent #fa5741 transparent transparent; }
+      .user-logon .reg-body .reg-form .zhangsan {
         border-radius: 3px 3px 1 1;
         border-top: 2px solid #e4e4e4; }
-      .user-reg .reg-body .reg-form .xiaoming {
+      .user-logon .reg-body .reg-form .xiaoming {
         font-size: 18px;
         color: #fff;
         background: -webkit-linear-gradient(top, #00ae66, #00bf70);
         border-radius: 5px;
         margin: 25px auto;
         cursor: pointer; }
-      .user-reg .reg-body .reg-form .btn {
-        position: absolute;
-        left: 562px;
-        top: 11px;
-        width: 112px;
-        height: 33px;
-        line-height: 33px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        text-align: center;
-        color: #999;
-        font-size: 14px;
-        text-decoration: none;
-        cursor: pointer;
-        background: -webkit-linear-gradient(top, #fff, #fafafa); }
-      .user-reg .reg-body .reg-form label {
+      .user-logon .reg-body .reg-form label {
         display: block;
         width: 374px;
         margin: 0 auto;
         padding-top: 25px;
         cursor: default; }
-        .user-reg .reg-body .reg-form label .meimei {
+        .user-logon .reg-body .reg-form label .meimei {
           margin-right: 6px; }
-        .user-reg .reg-body .reg-form label a {
+        .user-logon .reg-body .reg-form label a {
           text-decoration: none;
           outline: none;
           color: #39ac6a; }
-        .user-reg .reg-body .reg-form label:hover a {
+        .user-logon .reg-body .reg-form label:hover a {
           text-decoration: underline; }
-
-.reg-footer {
-  width: 100%;
-  height: 35px;
-  text-align: center;
-  margin-top: 100px;
-  font-size: 12px;
-  color: #999; }
-  .reg-footer .wan {
-    width: a; }
+  .user-logon .reg-footer {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    cursor: default;
+    position: fixed;
+    bottom: 0;
+    min-width: 1000px;
+    background: #f5f5f6;
+    padding-top: 0;
+    height: 80px;
+    /* height: 60px; */ }
+    .user-logon .reg-footer .wan {
+      width: a; }
