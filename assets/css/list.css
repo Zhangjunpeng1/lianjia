@@ -31,7 +31,10 @@ body {
   float: left;
   font-size: 12px;
   margin-right: 15px;
-  cursor: pointer;
+}
+.header .conter .fl li a {
+  text-decoration: none;
+  color: #333;
 }
 .header .conter .fr span {
   height: 36px;

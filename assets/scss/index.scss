@@ -136,10 +136,8 @@
 
                     .clear-right-nav {
                         position: absolute;
-                        top: 0;
                         right: 0;
                         bottom: 0;
-                        margin: auto;
                         font-size: 0;
                         >li {
 
@@ -161,7 +159,7 @@
                             }
                             &.guide {
                                 position: relative;
-                                font-size: o;
+                                font-size: 0;
                                 .guide-list {
                                     position: absolute;
                                     width: 130px;
