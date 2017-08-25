@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   width: 100%;
   height: 713px;
@@ -16,11 +20,17 @@ body {
   -ms-text-size-adjust: 100%;
 }
 
+div {
+  display: block;
+}
+
 .user-reg {
   width: 100%;
   height: 574px;
+  position: relative;
 }
 .user-reg .reg-head {
+  position: absolute;
   width: 100%;
   height: 55px;
   line-height: 55px;
@@ -51,6 +61,109 @@ body {
   outline: none;
   text-decoration: none;
   color: #333;
+}
+.user-reg .reg-body {
+  width: 1000px;
+  margin: 0 auto;
+  height: 480px;
+  position: relative;
+}
+.user-reg .reg-body h1 {
+  width: 372px;
+  font-size: 35px;
+  margin-bottom: 28px;
+  margin: 0 auto;
+  font-weight: normal;
+}
+.user-reg .reg-body .reg-logon {
+  position: absolute;
+  width: 112px;
+  height: 20px;
+  left: 575px;
+  top: 25px;
+}
+.user-reg .reg-body .reg-logon a {
+  text-decoration: none;
+  outline: none;
+  color: #39ac6a;
+}
+.user-reg .reg-body .reg-logon:hover a {
+  text-decoration: underline;
+}
+.user-reg .reg-body .reg-form {
+  position: absolute;
+  width: 1000px;
+  height: 405px;
+  margin-top: 20px;
+  text-align: center;
+}
+.user-reg .reg-body .reg-form .inputText {
+  text-indent: 19px;
+  width: 372px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 14px;
+  outline: none;
+  border-top: none;
+  border-left: 1px solid #e4e4e4;
+}
+.user-reg .reg-body .reg-form .zhangsan {
+  border-radius: 3px 3px 1 1;
+  border-top: 2px solid #e4e4e4;
+}
+.user-reg .reg-body .reg-form .xiaoming {
+  font-size: 18px;
+  color: #fff;
+  background: -webkit-linear-gradient(top, #00ae66, #00bf70);
+  border-radius: 5px;
+  margin: 25px auto;
+  cursor: pointer;
+}
+.user-reg .reg-body .reg-form .btn {
+  position: absolute;
+  left: 562px;
+  top: 11px;
+  width: 112px;
+  height: 33px;
+  line-height: 33px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  background: -webkit-linear-gradient(top, #fff, #fafafa);
+}
+.user-reg .reg-body .reg-form label {
+  display: block;
+  width: 374px;
+  margin: 0 auto;
+  padding-top: 25px;
+  cursor: default;
+}
+.user-reg .reg-body .reg-form label .meimei {
+  margin-right: 6px;
+}
+.user-reg .reg-body .reg-form label a {
+  text-decoration: none;
+  outline: none;
+  color: #39ac6a;
+}
+.user-reg .reg-body .reg-form label:hover a {
+  text-decoration: underline;
+}
+
+.reg-footer {
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 12px;
+  color: #999;
+}
+.reg-footer .wan {
+  width: a;
 }
 
 /*# sourceMappingURL=reg.css.map */
