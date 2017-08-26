@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我是业主</title>
+    <link rel="stylesheet" href="assets/css/personage.css">
+    <link rel="icon" href="assets/img/1.jpg">
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="conter">
+            <ul class="fl">
+                <li><a href="index.html">
+                    首页</a>
+                </li>
+                <li><a href="">二手房</a>
+                </li>
+                <li><a href="list.html">新房</a>
+                </li>
+                <li><a href="">租房</a>
+                </li>
+                <li><a href="">旅居地产</a>
+                </li>
+                <li><a href="">海外</a>
+                </li>
+                <li><a href="">小区</a>
+                </li>
+                <li><a href="">经纪人</a>
+                </li>
+                <li class="guide">
+                    <a href="">指南</a>
+                    <ul class="guide-list">
+                        <li>问答</li>
+                        <li>百科</li>
+                    </ul>
+                </li>
+                <li><a href="">工具</a>
+                </li>
+                <li class="suffer">
+                    <a href="">经验</a>
+                    <ul class="suffer-list">
+                        <li>购房经验</li>
+                        <li>我要投稿</li>
+                    </ul>
+                </li>
+                <li><a href="personage.html">业主</a>
+                </li>
+            </ul>
+            <div class="fr">
+                <span><a href="logon.html">登录</a></span>
+                <span>/</span>
+                <span><a href="reg.html">注册</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="contera">
+            <div class="fl">
+                <a href="" class="log" title="链家网"></a>
+                <ul>
+                    <li class="ull"><a href="">我要卖房</a></li>
+                    <li class="ul2"><a href="">我要估价</a></li>
+                    <li class="ul3"><a href="">我要出租</a></li>
+                </ul>
+            </div>
+            <div class="fr"><a href="">
+                <i class="phone"></i>
+                <span>下载链家APP</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="bodyer">
+        <div class="b-top">
+            <h1>发布出售房源</h1>
+            <p>8000+全国链家门店·10万+全国经纪人·链家倾情服务15年+</p>
+        </div>
+        <div class="b-form">
+            <div class="fl">
+                <dl class="fl-1">
+                    <dt>小区所在城市</dt>
+                    <dd>
+                        <div>北京</div>
+                    </dd>
+                </dl>
+                <dl class="fl-2">
+                    <dt>小区</dt>
+                    <dd class="sug">
+                        <div class="u-sug" id="u-sug">
+                            <input type="text" class="sugInput" name="resblock" autocomplete="off" placeholder="请输入小区名" vlue="">
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="fl-3">
+                    <dt>房屋地址</dt>
+                    <dd>
+                        <div class="u-select u-select-build" name="building">
+                            <input type="text" placeholder="楼栋号" class="u-selected" vlue="">
+                        </div>
+                        <div class="u-select u-select-build" name="name">
+                            <input type="text" placeholder="单元号" class="u-selected" vlue="">
+                        </div>
+                        <div class="u-select u-select-build" name="namename">
+                            <input type="text" placeholder="门牌号" class="u-selected" vlue="">
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="fl-4">
+                    <dt>期望售价</dt>
+                    <dd>
+                        <input type="text" name="expect_price" value="" placeholder="请输入您期望卖出的价格" autocomplete="off" style="width:210px;">
+                        <div class="unit">万元</div>
+                        <a href="">不太清楚如何定价？先估个价</a>
+                    </dd>
+                </dl>
+                <dl class="fl-5">
+                    <dt>称呼</dt>
+                    <dd>
+                        <input type="text" name="expect_name" value="" placeholder="我们应该如何称呼您" autocomplete="off" style="width:250px;">
+                    </dd>
+                </dl>
+                <dl class="fl-6">
+                    <dt>手机号码</dt>
+                    <dd>
+                        <input type="text" name="expect_namename" value="" placeholder="您的联系方式，方便我们及时于您联系" autocomplete="off" style="width:250px;">
+                    </dd>
+                </dl>
+                <dl class="fl-7">
+                    <dt>手机验证码</dt>
+                    <dd>
+                        <input type="text" name="expect_code" value="" placeholder="请输入手机验证码" autocomplete="off" style="width:250px;">
+                        <div class="btn-get">获取短息验证码</div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="fr">
+                <div class="fr-top">
+                    <div class="top-left">
+                        <div class="tops">北京市 成交均价</div>
+                        <div class="bot"><span class="num">62667</span> <span>元/㎡</span></div>
+                    </div>
+                    <div class="top-right">
+                    </div>
+                </div>
+                <div class="fr-body">
+                    <ul class="bodys">
+                        <li>
+                            <a href="">昊文温泉家园 - 1室1厅/43.66平米</a>
+                            <span class="time">
+             				 签约时间 2017-08-11
+							</span>
+                            <span class="price">166万</span>
+                        </li>
+                        <li>
+                            <a href="">兴海园 - 3室1厅/90.33平米</a>
+                            <span class="time">
+             				 签约时间 2017-08-11
+							</span>
+                            <span class="price">304万</span>
+                        </li>
+                        <li>
+                            <a href="">嘉禾园 - 2室1厅/80.01平米</a>
+                            <span class="time">
+             				 签约时间 2017-08-11
+							</span>
+                            <span class="price">510万</span>
+                        </li>
+                    </ul>
+                    <div class="show">
+                        <a href="">查看更多成交明细</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tijiao">
+            <div class="submit">
+                <div class="btn">提交委托</div>
+            </div>
+        </div>
+        <div class="liucheng">
+            <div class="lc-shang">
+                买房全流程
+            </div>
+            <ul class="row">
+                <li>
+                    <span class="icon icon-1"></span>
+                    <div class="rows">发布房源</div>
+                    <div class="rowx">在线上免费发布房源</div>
+                </li>
+                <li>
+                    <span class="icon icon-2"></span>
+                    <div class="rows">发布房源</div>
+                    <div class="rowx">在线上免费发布房源</div>
+                </li>
+                <li>
+                    <span class="icon icon-3"></span>
+                    <div class="rows">发布房源</div>
+                    <div class="rowx">在线上免费发布房源</div>
+                </li>
+                <li>
+                    <span class="icon icon-4"></span>
+                    <div class="rows">发布房源</div>
+                    <div class="rowx">在线上免费发布房源</div>
+                </li>
+            </ul>
+        </div>
+        <div class="dingjia">
+            <div class="wrap">
+                <div class="text">
+                    <div class="tit">不知道如何定价？</div>
+                    <div class="tit-sub">链家专业房屋估价值，为您提供买房卖房价格参考</div>
+                </div>
+                <a href="" class="btn">
+        			<span class="mark"></span>
+        			<span class="icon-money"></span>
+        			<span class="txt">看看您的房子值多少钱？</span>
+        			<span class="gujia">马上去估价</span>
+        		</a>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="wrap">
+            <div class="app">去链家APP提升卖房速度</div>
+            <div class="logon">登录业主中心查看同类房子实时成交动态、主动介绍房子吸引更多买家关注</div>
+            <a href="" class="icon-iphone"></a>
+            <a href="" class="icon-android"></a>
+            <div class="icon-qrcode" style="background:none;">
+                <img src="assets/images/rr.png" style="width:100%;" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footers">
+            <ul class="lists-1">
+                <li><a href="">链家新房合作</a></li>
+                <li><a href="">了解链家网</a></li>
+                <li><a href="">关于链家</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">加入链家</a></li>
+                <li><a href="">隐私声明</a></li>
+                <li><a href="">网站地图</a></li>
+                <li><a href="">友情链接</a></li>
+                <li><a href="">经纪人登录</a></li>
+            </ul>
+            <div class="fr">官方客服 1010 9666</div>
+            <div class="lists-2">
+                <ul class="menu-t">
+                    <li class="active" data-index="0">北京区县新楼盘</li>
+                    <li data-index="1">推荐城市新房网</li>
+                    <li data-index="2">推荐城市新楼盘</li>
+                    <li data-index="3">友情链接</li>
+                </ul>
+                <div class="show">
+                    <div>
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">合肥二手房</a>
+                    </div>
+                    <div class="hides">
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">合肥二手房</a>
+                    </div>
+                    <div class="hides">
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">合肥二手房</a>
+                    </div>
+                    <div class="hides">
+                        <a href="">北京二手房</a>
+                        <a href="">广州二手房</a>
+                        <a href="">深圳二手房</a>
+                        <a href="">天津二手房</a>
+                        <a href="">成都二手房</a>
+                        <a href="">南京二手房</a>
+                        <a href="">杭州二手房</a>
+                        <a href="">青岛二手房</a>
+                        <a href="">大连二手房</a>
+                        <a href="">厦门二手房</a>
+                        <a href="">武汉二手房</a>
+                        <a href="">重庆二手房</a>
+                        <a href="">长沙二手房</a>
+                        <a href="">济南二手房</a>
+                        <a href="">佛山二手房</a>
+                        <a href="">东莞二手房</a>
+                        <a href="">烟台二手房</a>
+                        <a href="">中山二手房</a>
+                        <a href="">珠海二手房</a>
+                        <a href="">惠州二手房</a><a href="">沈阳二手房</a>
+                        <a href="">合肥二手房</a> 4
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="copy-fl">链家网（北京）科技有限公司 | 网络经营许可证 京ICP备16057509号-2 | © Copyright©2010-2017 链家网Lianjia.com版权所有<a href=""><img src="assets/images/beian.png" alt="京公网安备"><p>京公网安备 11010802024019号</p></a></div>
+        </div>
+    </div>
+    <ul class="youce ">
+        <li class="yc-1 "></li>
+        <li class="yc-2 "></li>
+        <li class="yc-3 "></li>
+        <li class="yc-4 "></li>
+        <li class="yc-5 "></li>
+        <li class="yc-6 "></li>
+        <li class="yc-7 "></li>
+        <li class="yc-8 "></li>
+        <li class="yc-9 "></li>
+        <li class="yc-10 "></li>
+    </ul>
+</body>
+
+</html>
