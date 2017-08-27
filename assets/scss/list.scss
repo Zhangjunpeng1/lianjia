@@ -118,7 +118,7 @@ body {
                 float: right;
                 text-align: center;
                 padding-left: 60px;
-                .ull {
+                .ull a {
                     color: #5dbb85;
                 }
                 li {
@@ -129,6 +129,11 @@ body {
                     float: left;
                     margin-right: 20px;
                     font-size: 16px;
+                    a {
+                        text-decoration: none;
+                        color: #333;
+                        font-size: 16px;
+                    }
                     i {
                         display: block;
                         margin-top: -60px;
@@ -140,12 +145,10 @@ body {
                     }
                 }
             }
-            &:hover {
-                .ull,
-                .ul2,
-                .ul3 {
-                    text-decoration: underline;
-                }
+
+            li:hover {
+
+                text-decoration: underline;
             }
         }
         .fr {
